@@ -1,0 +1,47 @@
+{
+  "name": "aiodebrid",
+  "version": "0.0.1",
+  "description": "A unified TypeScript SDK for Debrid services (TorBox, Real-Debrid, AllDebrid) with smart routing.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "lint": "tsc",
+    "release": "changeset publish"
+  },
+  "keywords": [
+    "debrid",
+    "torbox",
+    "real-debrid",
+    "realdebrid",
+    "alldebrid",
+    "torrent",
+    "sdk",
+    "typescript",
+    "streaming"
+  ],
+  "author": "worldInColors",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "form-data": "^4.0.1"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.8",
+    "@types/node": "^22.10.2",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  }
+}
