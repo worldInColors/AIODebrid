@@ -1,6 +1,6 @@
 {
   "name": "aiodebrid",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A unified TypeScript SDK for Debrid services (TorBox, Real-Debrid, AllDebrid) with smart routing.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
