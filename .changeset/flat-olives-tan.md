@@ -1,5 +1,0 @@
----
-"aiodebrid": patch
----
-
-initial release
